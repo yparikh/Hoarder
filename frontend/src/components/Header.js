@@ -2,7 +2,19 @@ import React, {useEffect, useState} from 'react'
 import "beercss";
 import "material-dynamic-colors";
 
-
+const Header = () => {
+    return (
+        <header className="fill">
+            <nav>
+                <button className="circle transparent">
+                    <i>menu</i>
+                </button>
+                <h5 className="max center-align">Hoarder</h5>
+                <DarkModeButton/>
+            </nav>
+        </header>
+    )
+}
 
 const DarkModeButton = () => {
 
@@ -29,18 +41,5 @@ const DarkModeButton = () => {
     )
 }
 
-const Header = () => {
-    return (
-        <header className="fill">
-            <nav>
-                <button className="circle transparent">
-                    <i>menu</i>
-                </button>
-                <h5 className="max center-align">Hoarder</h5>
-                <DarkModeButton/>
-            </nav>
-        </header>
-    )
-}
 
 export default Header
